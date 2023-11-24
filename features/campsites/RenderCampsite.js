@@ -25,4 +25,4 @@ const RenderCampsite = ({ campsite }) => {
     return <View />;
 }
 
-export default RenderCampsite
+export default RenderCampsite;
