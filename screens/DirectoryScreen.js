@@ -1,6 +1,6 @@
-import { FlatList } from "react-native";
-import { useState } from "react";
-import { Avatar, ListItem } from "react-native-elements";
+import { FlatList } from 'react-native';
+import { useState } from 'react';
+import { Avatar, ListItem } from 'react-native-elements';
 import { CAMPSITES } from '../shared/campsites';
 
 const DirectoryScreen = ({ navigation }) => {
@@ -29,4 +29,4 @@ const DirectoryScreen = ({ navigation }) => {
     )
 }
 
-export default DirectoryScreen
+export default DirectoryScreen;

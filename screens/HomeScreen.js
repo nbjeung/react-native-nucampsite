@@ -1,6 +1,6 @@
-import { Text, View, ScrollView } from "react-native";
-import { useState } from "react";
-import { Card } from "react-native-elements";
+import { Text, View, ScrollView } from 'react-native';
+import { useState } from 'react';
+import { Card } from 'react-native-elements';
 import { CAMPSITES } from '../shared/campsites';
 import { PROMOTIONS } from '../shared/promotions';
 import { PARTNERS } from '../shared/partners';
