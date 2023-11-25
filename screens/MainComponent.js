@@ -1,10 +1,10 @@
 import { View, Platform } from 'react-native';
-import { Constants } from 'expo-constants';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import HomeScreen from './HomeScreen';
 import { createStackNavigator } from '@react-navigation/stack';
+import Constants from 'expo-constants';
 import CampsiteInfoScreen from './CampsiteInfoScreen';
 import DirectoryScreen from './DirectoryScreen';
+import HomeScreen from './HomeScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -17,7 +17,7 @@ const HomeNavigator = () => {
     const Stack = createStackNavigator();
 
     return (
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={screenOptions}>
             <Stack.Screen
                 name='Home'
                 component={HomeScreen}
@@ -73,7 +73,6 @@ const Main = () => {
                     component={DirectoryNavigator}
                     options={{ title: 'Directory' }}
                 />
-
             </Drawer.Navigator>
         </View>
     )
