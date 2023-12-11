@@ -24,7 +24,7 @@ const ReservationScreen = () => {
             'Begin Search?',
             'Number of Campers: ' + campers +
             '\n\nHike-In? ' + hikeIn +
-            '\n\nDate: ' + String(date.getMonth()).padStart(2, '0') + '/' + String(date.getDate()).padStart(2, '0') + '/' + String(date.getFullYear()).slice(2),
+            '\n\nDate: ' + String(date.getMonth() + 1).padStart(2, '0') + '/' + String(date.getDate()).padStart(2, '0') + '/' + String(date.getFullYear()).slice(2),
             [
                 {
                     text: 'Cancel',
